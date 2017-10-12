@@ -3,5 +3,5 @@ MyProject/.idea/
 MyProject/build/
 MyProject/app/build/
 MyProject/library/build/
-MyProject/local.properies
+local.properies
 *.iml
