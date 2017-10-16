@@ -24,24 +24,23 @@ public class StringCallbackImpl implements Callback {
     private ResponseCallback mCallback;
     private String tag;
     private RequestParams mParams;
-    private String key;//需要取消的key
 
     public StringCallbackImpl(ResponseCallback callback, RequestParams params) {
         this.mCallback = callback;
         this.mParams = params;
         this.tag = params.getUrlPath();
-        this.key = callback.getInvoker() + ":" + params;
     }
 
     @Override
     public void onFailure(Call call, IOException e) {
-        HttpClient.getInstance().removeCall(key);
+        HttpClient.getInstance().removeCall(mCallback.getInvoker());
+        LogUtil.e(tag,Utils.convertThrowToString(e));
         tellTaskFailed(HttpUtil.ERROR_REQUEST_FAILURE, "请求失败");
     }
 
     @Override
     public void onResponse(Call call, Response response) {
-        HttpClient.getInstance().removeCall(key);
+        HttpClient.getInstance().removeCall(mCallback.getInvoker());
         LogUtil.i(tag, "response : " + response);
         try {
             if (response.isSuccessful()) {
@@ -51,6 +50,7 @@ public class StringCallbackImpl implements Callback {
                 }
                 String result = response.body().string();//string()只能调用一次
                 LogUtil.i(tag, "responseBodyString : " + result);
+                tellTaskSuccess(result);
             } else {
                 tellTaskFailed(response.code(), "请求失败!");
             }
@@ -81,7 +81,8 @@ public class StringCallbackImpl implements Callback {
             @Override
             public void run() {
                 try {
-                    mCallback.onSuccess(JSON.parseObject(result, mCallback.getType()));
+                    Object resultObj = JSON.parseObject(result, mCallback.getType());
+                    mCallback.onSuccess(resultObj);
                 } catch (Exception e) {
                     LogUtil.e(tag, Utils.convertThrowToString(e));
                     tellTaskFailed(HttpUtil.ERROR_RESPONSE_HANDLE, "响应处理失败");

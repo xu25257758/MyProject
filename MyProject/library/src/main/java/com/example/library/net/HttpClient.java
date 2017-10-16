@@ -11,7 +11,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
@@ -35,9 +34,9 @@ public class HttpClient {
     private static final long DEFAULT_CONN_TIMEOUT = 30;
     private static HttpClient mHttpClient;
     private static byte[] lock = new byte[0];
-    private ConcurrentHashMap<String, Call> mCalls;//网络请求记录call，便于取消
+    private ConcurrentHashMap<String, List<Call>> mCalls;//网络请求记录call，用于取消
     private String mCookie;
-    private boolean cancelDownload;
+    private boolean download;
     private static OkHttpClient mOkHttpClient = new OkHttpClient.Builder().
             writeTimeout(DEFAULT_WRITE_TIMEOUT, TimeUnit.SECONDS).
             readTimeout(DEFAULT_READ_TIMEOUT, TimeUnit.SECONDS).
@@ -73,12 +72,16 @@ public class HttpClient {
     public void post(RequestParams params, ResponseCallback callBack){
         String tag = params.getUrlPath();
         String url = params.getUrl();
-        if (!params.hasData()) {
+        LogUtil.i(TAG,"complete request url is : "+url);
+        if (params.hasData()) {
             callBack.onFailure(HttpUtil.ERROR_REQUEST_NO_BODY, "请求参数为空");
             return;
         }
         //创建请求参数
         RequestBody requestBody = params.getFormBody();
+        if (requestBody == null){
+            callBack.onFailure(HttpUtil.ERROR_REQUEST_NO_BODY,"请求参数为空");
+        }
         //创建请求
         Request req = buildPostRequest(url, requestBody, tag);
         //异步加载
@@ -87,7 +90,7 @@ public class HttpClient {
 
     //下载文件
     public void downloadFileAsync(String url, final String saveFilePath, final String fileName, final ResponseCallback callback) {
-        cancelDownload = false;
+        download = true;
         Request request = new Request.Builder().url(url).build();
         OkHttpClient client = new OkHttpClient.Builder().
                 connectTimeout(DEFAULT_CONN_TIMEOUT, TimeUnit.SECONDS)
@@ -112,7 +115,7 @@ public class HttpClient {
                     File file = new File(savePath, fileName);
                     fos = new FileOutputStream(file);
                     long sum = 0;
-                    while ((len = is.read(buf)) != -1 && !cancelDownload) {
+                    while ((len = is.read(buf)) != -1 && download) {
                         fos.write(buf, 0, len);
                         sum += len;
                         // 下载中
@@ -140,7 +143,7 @@ public class HttpClient {
 
     //取消下载
     public void cancelDownload() {
-        cancelDownload = true;
+        download = false;
     }
 
     /**
@@ -159,34 +162,31 @@ public class HttpClient {
     }
 
     private void addCall(Call call, ResponseCallback callBack) {
-        String key = callBack.getInvoker() + ":" + callBack;
-        mCalls.put(key, call);
+        String key = callBack.getInvoker();
+        List<Call> calls = mCalls.get(key);
+        if (calls == null){
+            calls = new ArrayList<>();
+            mCalls.put(key, calls);
+        }
+        calls.add(call);
     }
 
     public void removeCall(String key) {
         mCalls.remove(key);
     }
 
-    public void cancelTaskByInvoker(String name) {
+    public void cancelRequestByInvoker(String name) {
         LogUtil.i("cancel task for:" ,name);
-        if (name == null)
-            name = "null:";
-        Iterator iterator = mCalls.keySet().iterator();
-        List<String> willRemoved = new ArrayList<>();
-        while (iterator.hasNext()) {
-            String key = (String) iterator.next();
-            if (key.startsWith(name)) {
-                LogUtil.i("cancel task:",key);
-                Call call = mCalls.get(key);
-                if (call != null) {
-                    call.cancel();
-                }
-                willRemoved.add(key);
-            }
+        if (name == null) {
+            return;
         }
-        int len = willRemoved.size();
-        for (int i = 0; i < len; i++) {
-            mCalls.remove(willRemoved.get(i));
+        List<Call> calls = mCalls.get(name);
+        if (mCalls == null || mCalls.size() == 0){
+            return;
+        }
+        for (int i = 0; i < calls.size(); i++) {
+            Call call = calls.get(i);
+            call.cancel();
         }
     }
 
