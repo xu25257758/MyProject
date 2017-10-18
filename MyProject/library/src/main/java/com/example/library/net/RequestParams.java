@@ -1,10 +1,9 @@
 package com.example.library.net;
 
 
+import com.alibaba.fastjson.JSON;
+import com.example.library.util.LogUtil;
 import com.example.library.util.StringUtil;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -20,6 +19,9 @@ import okhttp3.RequestBody;
  */
 
 public class RequestParams {
+
+    public static final String TAG = "RequestParams";
+
     public static String HOST;
     private String mUrl;//请求的url
     private Map<String, String> params;//请求参数
@@ -53,12 +55,12 @@ public class RequestParams {
         }
     }
 
-    public void addUploadPath(String key,String filePath){
-        if (uploadPaths == null){
+    public void addUploadPath(String key, String filePath) {
+        if (uploadPaths == null) {
             uploadPaths = new HashMap<>();
         }
-        if (!StringUtil.isEmpty(key) && !StringUtil.isEmpty(filePath)){
-            uploadPaths.put(key,filePath);
+        if (!StringUtil.isEmpty(key) && !StringUtil.isEmpty(filePath)) {
+            uploadPaths.put(key, filePath);
         }
     }
 
@@ -79,7 +81,7 @@ public class RequestParams {
         }
     }
 
-    public boolean hasData(){
+    public boolean hasData() {
         return params == null || params.isEmpty();
     }
 
@@ -97,41 +99,39 @@ public class RequestParams {
     }
 
     //使用form表单提交数据
-    public RequestBody getFormBody(){
+    public RequestBody getFormBody() {
         if (params == null || params.isEmpty()) {
             return null;
         }
         FormBody.Builder builder = new FormBody.Builder();
         for (Map.Entry<String, String> entry :
                 params.entrySet()) {
-            builder.add(entry.getKey(),entry.getValue());
+            builder.add(entry.getKey(), entry.getValue());
         }
         return builder.build();
     }
 
     //使用json提交数据
-    public RequestBody getJsonBody(){
+    public RequestBody getJsonBody() {
         if (params == null || params.isEmpty()) {
             return null;
         }
         MediaType mediaType = MediaType.parse("application/json");
-        JSONObject jsonObject = new JSONObject();
-        for (Map.Entry<String, String> entry :
-                params.entrySet()) {
-            try {
-                jsonObject.put(entry.getKey(),entry.getValue());
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
+        RequestBody requestBody = null;
+        try {
+            String jsonString = JSON.toJSONString(params);
+            requestBody = RequestBody.create(mediaType, jsonString);
+        } catch (Exception e) {
+            LogUtil.e(TAG, StringUtil.convertThrowToString(e));
         }
-        return RequestBody.create(mediaType,jsonObject.toString());
+        return requestBody;
     }
 
-    public byte[] getParamData(){
+    public byte[] getParamData() {
         String param = buildParams();
-        if (StringUtil.isEmpty(param)){
+        if (StringUtil.isEmpty(param)) {
             return null;
-        }else {
+        } else {
             return param.getBytes();
         }
     }
