@@ -1,8 +1,7 @@
 package com.example.library.net;
 
-import android.text.TextUtils;
 
-import com.example.library.util.Utils;
+import com.example.library.util.StringUtil;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -46,7 +45,7 @@ public class RequestParams {
     //添加请求属性
     public void addParam(String key, String value) {
         try {
-            if (!Utils.isEmpty(key) && !Utils.isEmpty(value)) {
+            if (!StringUtil.isEmpty(key) && !StringUtil.isEmpty(value)) {
                 params.put(key, URLEncoder.encode(value, "UTF-8"));
             }
         } catch (UnsupportedEncodingException e) {
@@ -58,13 +57,13 @@ public class RequestParams {
         if (uploadPaths == null){
             uploadPaths = new HashMap<>();
         }
-        if (!Utils.isEmpty(key) && !Utils.isEmpty(filePath)){
+        if (!StringUtil.isEmpty(key) && !StringUtil.isEmpty(filePath)){
             uploadPaths.put(key,filePath);
         }
     }
 
     public String getUrl() {
-        if (Utils.isEmpty(mUrl)) {
+        if (StringUtil.isEmpty(mUrl)) {
             buildUrl();
         }
         return mUrl;
@@ -130,7 +129,7 @@ public class RequestParams {
 
     public byte[] getParamData(){
         String param = buildParams();
-        if (TextUtils.isEmpty(param)){
+        if (StringUtil.isEmpty(param)){
             return null;
         }else {
             return param.getBytes();
