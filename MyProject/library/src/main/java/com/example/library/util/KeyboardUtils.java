@@ -22,7 +22,10 @@ public class KeyboardUtils {
         }
     }
 
-    //显示软键盘
+    /**
+     * 显示软键盘
+     * @param edit 需要输入数据的EditText
+     */
     public static void showSoftKeyboard(final EditText edit){
         if (edit == null){
             return;

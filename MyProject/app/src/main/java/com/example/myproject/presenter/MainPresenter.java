@@ -1,20 +1,25 @@
-package com.example.myproject;
+package com.example.myproject.presenter;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
 import android.util.Log;
 
 import com.example.library.net.HttpClient;
 import com.example.library.net.RequestParams;
 import com.example.library.net.ResponseCallback;
+import com.example.myproject.imp.IMainView;
 
-public class MainActivity extends AppCompatActivity {
+/**
+ * Created by xuzhiqiang on 2017/10/18.
+ */
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        RequestParams.HOST = "http://192.168.1.190:8080/";
+public class MainPresenter {
+
+    private IMainView mView;
+    public MainPresenter(IMainView mView){
+        this.mView = mView;
+    }
+
+    public void testOkhttp(){
         RequestParams params = new RequestParams("SecondWebProject/firstServlet");
         params.addParam("usename","usename");
         params.addParam("password","password");
@@ -32,9 +37,13 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public String getInvoker() {
-                    return "MainActivity";
+                    return mView.getClass().getSimpleName();
                 }
             });
         }
+    }
+
+    public void title(Context context){
+        mView.showLoadingDialog();
     }
 }
