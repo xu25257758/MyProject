@@ -5,7 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.myproject.MyApplication;
-import com.example.myproject.imp.IBaseView;
+import com.example.myproject.iview.IBaseView;
 import com.example.myproject.util.DialogUtil;
 
 import butterknife.ButterKnife;

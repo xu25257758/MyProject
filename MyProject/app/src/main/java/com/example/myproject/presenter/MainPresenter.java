@@ -6,7 +6,7 @@ import android.util.Log;
 import com.example.library.net.HttpClient;
 import com.example.library.net.RequestParams;
 import com.example.library.net.ResponseCallback;
-import com.example.myproject.imp.IMainView;
+import com.example.myproject.iview.IMainView;
 
 /**
  * Created by xuzhiqiang on 2017/10/18.

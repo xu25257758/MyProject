@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.myproject.R;
-import com.example.myproject.imp.IMainView;
+import com.example.myproject.iview.IMainView;
 import com.example.myproject.presenter.MainPresenter;
 import com.example.myproject.util.DialogUtil;
 
