@@ -12,14 +12,16 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/main_btn"
+            android:id="@+id/button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="按钮1"/>
 
         <Button
             android:id="@+id/main_btn1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="按钮2"/>
     </LinearLayout>
 
 </LinearLayout>
