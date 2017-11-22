@@ -30,7 +30,7 @@ public class MainActivity extends BaseActivity implements IMainView {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPresenter = new MainPresenter(this);
-//        Toast.makeText(this, Utils.getString(R.string.testString),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, Utils.getString(R.string.testString),Toast.LENGTH_SHORT).show();
     }
 
     @OnClick({R.id.button, R.id.main_btn1})
