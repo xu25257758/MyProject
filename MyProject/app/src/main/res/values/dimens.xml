@@ -1,0 +1,128 @@
+<resources>
+    <!-- sw360dp start -->
+    <dimen name="d_4">4dp</dimen>
+    <dimen name="d_text_pic_4">2dp</dimen>
+    <!--因为在适配上字与周围会有距离  -->
+    <dimen name="d_8">8dp</dimen>
+    <dimen name="d_text_pic_8">6dp</dimen>
+    <dimen name="d_text_pic_20">18dp</dimen>
+    <dimen name="dialog_pickcommon_margintop">11dp</dimen>
+    <dimen name="d_48">48dp</dimen>
+    <dimen name="d_12">12dp</dimen>
+    <dimen name="postcard_text_size">14dp</dimen>
+    <integer name="postcard_text_value">14</integer>
+    <dimen name="postcard_layout_size">30dp</dimen>
+    <integer name="postcard_layout_value">30</integer>
+    <dimen name="d_20">20dp</dimen>
+    <dimen name="d_10">10dp</dimen>
+    <dimen name="d_14">14dp</dimen>
+    <dimen name="grage_star_margin_left">16dp</dimen>
+    <dimen name="d_16">16dp</dimen>
+    <dimen name="d_40">40dp</dimen>
+    <dimen name="d_0_5">0.5dp</dimen>
+    <dimen name="d_50">50dp</dimen>
+    <dimen name="d_6">6dp</dimen>
+    <dimen name="d_15">15dp</dimen>
+    <dimen name="d_56">56dp</dimen>
+    <dimen name="d_28">28dp</dimen>
+    <dimen name="d_80">80dp</dimen>
+    <dimen name="d_32">32dp</dimen>
+    <dimen name="d_266">229dp</dimen>
+    <dimen name="d_24">24dp</dimen>
+    <dimen name="d_5">5dp</dimen>
+    <dimen name="d_2">2dp</dimen>
+    <dimen name="d_100">100dp</dimen>
+    <dimen name="d_64">64dp</dimen>
+    <dimen name="send_trend_item_width">77dp</dimen>
+    <dimen name="d_68">68dp</dimen>
+    <dimen name="d_60">60dp</dimen>
+    <dimen name="d_36">36dp</dimen>
+    <dimen name="d_39">39dp</dimen>
+    <dimen name="d_18">18dp</dimen>
+    <dimen name="d_22">22dp</dimen>
+    <dimen name="d_30">30dp</dimen>
+    <dimen name="d_26">26dp</dimen>
+    <dimen name="d_120">120dp</dimen>
+    <dimen name="d_260">260dp</dimen>
+    <dimen name="d_210">210dp</dimen>
+    <dimen name="d_96">96dp</dimen>
+    <dimen name="d_27">27dp</dimen>
+    <dimen name="d_11">11dp</dimen>
+    <dimen name="d_25">25dp</dimen>
+    <dimen name="dynamic_middle_height">360dp</dimen>
+    <!-- 导航栏高度 -->
+    <dimen name="navi_height">48dp</dimen>
+
+    <!-- UI调优距离换算 -->
+    <!-- sw360dp end -->
+
+    <dimen name="list_item_loadmore_height">40dp</dimen>
+
+    <!-- pull to refresh -->
+
+
+    <!-- toast 提示 -->
+    <dimen name="toast_y_offset">64dip</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <declare-styleable name="HeartLayout">
+        <attr name="initX" format="dimension" />
+        <attr name="initY" format="dimension" />
+        <attr name="xRand" format="dimension" />
+        <attr name="animLengthRand" format="dimension" />
+        <attr name="xPointFactor" format="dimension" />
+        <attr name="animLength" format="dimension" />
+        <attr name="heart_width" format="dimension" />
+        <attr name="heart_height" format="dimension" />
+        <attr name="bezierFactor" format="integer" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+
+    <!--heartlayout-->
+    <dimen name="heart_anim_bezier_x_rand">40.0dp</dimen>
+    <dimen name="heart_anim_length">300.0dp</dimen>
+    <dimen name="heart_anim_length_rand">350.0dp</dimen>
+
+    <dimen name="chat_item_space">16dp</dimen>
+    <dimen name="chat_user_width">43dp</dimen>
+    <dimen name="portrait_lenght">60dp</dimen>
+
+    <!--新版UI字体大小-->
+    <dimen name="S1">10dp</dimen>
+    <dimen name="S2">12dp</dimen>
+    <dimen name="S3">13dp</dimen>
+    <dimen name="S4">14dp</dimen>
+    <dimen name="S5">15dp</dimen>
+    <dimen name="S6">16dp</dimen>
+    <dimen name="S7">17dp</dimen>
+    <dimen name="S8">18dp</dimen>
+    <dimen name="d_70">70dp</dimen>
+
+    <dimen name="phone_mark_btn_bottom">75dp</dimen>
+    <dimen name="city_wide_avatar_size">100dp</dimen>
+
+
+    <dimen name="card_padding">70dp</dimen>
+    <dimen name="viewpager_height">210dp</dimen>
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+    <!--one-->
+    <dimen name="one_s1">11dp</dimen>
+    <dimen name="d_3">3dp</dimen>
+    <dimen name="d_17">17dp</dimen>
+    <dimen name="d_42">42dp</dimen>
+    <dimen name="d_43">43dp</dimen>
+    <dimen name="d_1">1dp</dimen>
+    <dimen name="d_9">9dp</dimen>
+    <dimen name="d_7">7dp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+    <dimen name="d_13">13dp</dimen>
+    <dimen name="d_52">52dp</dimen>
+    <dimen name="d_29">29dp</dimen>
+    <dimen name="d_66">66dp</dimen>
+    <dimen name="d_19">19dp</dimen>
+    <dimen name="d_46">46dp</dimen>
+
+</resources>

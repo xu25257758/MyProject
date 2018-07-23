@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--红色-->
+    <color name="color_F75555">#F63A1C</color>
+    <color name="color_d04943">#DB2809</color>
+    <color name="color_7e7e80">#7e7e80</color>
+    <color name="color_474747">#474747</color>
+    <color name="black">#000000</color>
+    <color name="black80">#80000000</color>
+    <color name="black90">#90000000</color>
+
+    <color name="color_f1f1f1">#F9F5F0</color>
+    <color name="color_a0a0a0">#a0a0a0</color>
+
+    <color name="color_e8e8e8">#e8e8e8</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_e4e4e4">#e4e4e4</color>
+    <color name="color_b6b6b6">#b6b6b6</color>
+
+    <color name="color_26292f">#26292f</color>
+    <color name="color_4c26292f">#4c26292f</color>
+    <!-- 透明度0.3 -->
+    <!-- 透明度0.5 -->
+    <color name="color_5e6773">#5e6773</color>
+
+    <color name="color_4c4c4c">#4c4c4c</color>
+    <color name="color_93a0ab">#93a0ab</color>
+
+    <color name="color_c8cfd6">#c8cfd6</color>
+    <color name="color_242424">#242424</color>
+    <color name="color_f7ebe8">#f7ebe8</color>
+    <!-- 发话题 输入框 底部线 -->
+    <color name="color_f8f8f8">#f8f8f8</color>
+
+    <!--主页颜色修改  -->
+
+    <!--主页颜色修改  -->
+    <color name="color_9a008990">#9a008990</color>
+
+    <color name="color_a4a4a4">#a4a4a4</color>
+    <color name="color_929292">#929292</color>
+
+    <color name="color_808080">#808080</color>
+
+    <color name="color_71d091">#71d091</color>
+    <color name="color_c7c7c7">#c7c7c7</color>
+    <color name="color_e7e0db">#e7e0db</color>
+
+    <color name="white">#ffffff</color>
+    <color name="color_66b5f0">#66b5f0</color>
+    <color name="color_4a82fa">#4a82fa</color>
+    <color name="color_7766b5f0">#7766b5f0</color>
+    <color name="color_fba83d">#fba83d</color>
+    <color name="color_2e303f">#2e303f</color>
+    <color name="color_8a949b">#8a949b</color>
+    <!--视频组件添加-->
+    <color name="uvv_black">#ff000000</color>
+
+    <color name="color_e5e5e5">#e5e5e5</color>
+    <color name="color_e2373d">#e2373d</color>
+    <color name="color_b2b2b2">#b2b2b2</color>
+
+    <color name="releaseBackground">#e2373d</color>
+    <color name="pressed_btn">#c93035</color>
+
+    <color name="color_b2000000">#b2000000</color>
+
+    <color name="color_dcdcdc">#dcdcdc</color>
+    <color name="color_9c9c9c">#9c9c9c</color>
+    <color name="color_f63a1c">#fff63a1c</color>
+    <color name="transparent_background">#DD000000</color>
+    <color name="transparent_background88">#80000000</color>
+    <color name="transparent_background00">#00000000</color>
+    <color name="transparent_backgroundcc">#cc000000</color>
+    <color name="transparent_backgroundb2">#B2000000</color>
+
+    <color name="color_bdbcbc">#bdbcbc</color>
+    <color name="color_d2d2d2">#d2d2d2</color>
+    <color name="color_d5d5d5">#d5d5d5</color>
+    <color name="color_d3d3d3">#d3d3d3</color>
+
+    <!--新版UI颜色值-->
+
+    <color name="C1">#2e2e2e</color><!--文本字体颜色-->
+    <color name="C2">#666666</color>
+    <color name="C3">#999999</color>
+    <color name="C4">#bdbdbd</color>
+    <color name="C5">#ffffff</color>
+    <color name="C6">#c8c8c8</color><!--按钮上字体颜色-->
+    <color name="C7">#855f08</color>
+    <color name="C10">#ebedf0</color><!--分割线-->
+    <color name="C11">#e1e3e6</color>
+    <color name="C12">#ecf0f7</color><!--背景色-->
+    <color name="C13">#ffc02e</color><!--主色-->
+    <color name="C14">#ff6138</color><!--点睛色-->
+    <color name="C17">#58c0fc</color>
+    <!--描边颜色-->
+    <color name="C20">#d4d6d9</color>
+    <color name="C13_20">#33ffc02e</color><!--主色-->
+
+    <color name="color_855f08">#855f08</color>
+    <color name="color_fce6b4">#fce6b4</color>
+    <color name="color_181818">#181818</color>
+
+
+    <color name="NAV_TITLE">#ffffff</color>
+    <color name="NAV_BG">#222222</color>
+    
+    
+    <!--one color-->
+    <color name="one_4a76d4">#4a76d4</color>
+    <color name="one_828282">#828282</color>
+    <color name="one_f0f0f0">#f0f0f0</color>
+    <color name="one_4a82fa">#4a82fa</color>
+    <!--one  color -->
+
+
+</resources>

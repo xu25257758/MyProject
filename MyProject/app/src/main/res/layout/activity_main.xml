@@ -5,23 +5,28 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <LinearLayout
+
+    <Button
+        android:id="@+id/main_surfaceview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:text="SurfaceView"
+        android:textAllCaps="false"
+        />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="按钮1"/>
-
-        <Button
-            android:id="@+id/main_btn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="按钮2"/>
-    </LinearLayout>
+    <Button
+        android:id="@+id/main_jni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jni"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/main_prdownloader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="prdownloader"
+        android:textAllCaps="false"
+        />
 
 </LinearLayout>

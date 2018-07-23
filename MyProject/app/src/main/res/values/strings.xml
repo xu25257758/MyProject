@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string name="pull_to_refresh_pull_label">下拉刷新...</string>
+    <string name="pull_to_refresh_release_label">放开以刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入...</string>-->
+
+
+    <string name="chat_record_button_slideUpToCancel">手指上滑，取消发送</string>
+    <string name="chat_record_button_releaseToCancel">松开手指，取消录音</string>
+    <string name="chat_record_button_pleaseSayMore">多说点吧～</string>
+
+
+    <string name="app_new_name">绝配</string>
+    <!-- <string name="home_tab1_text">梦幻情书</string>
+    <string name="home_tab2_text">邂逅</string>-->
+    <!--<string name="home_tab3_text">喷吧</string>-->
+    <string name="home_tab4_text">消息</string>
+    <string name="home_tab5_text">我的</string>
+
+    <string name="home_tab2_text_new">推荐</string>
+    <!--<string name="home_tab2_text_new">偶遇</string>-->
+
+
+    <string name="log_in_btn_text">登录</string>
+    <string name="sign_in_et_phone_hint2">手机号/账号</string>
+    <string name="detail_transation_name">recommend_item_protrait</string>
+    <string name="one_female_red_text">赶快回复就有机会抢到#-#积分的红包哦!</string>
+    <string name="one_account_des">1.红色数字代表：有多少男用户下发了红包\n2.赶快点开头像去跟他们亲热聊天，前3
+    个与他聊天的人可获得随机红包(价值1元-9元不等)
+    </string>
+    <string name="one_judge_no_coin">您的动心币不足一分钟通话时长，\n请充值后继续哦
+    </string>
+    <string name="one_secret_no_coin">您的动心币不足\n请充值后继续哦
+    </string>
+    <string name="one_integrate">100积分=1元人民币\n最低可提现金额 100元
+    </string>
+    <string name="one_auth_prompt">您好，我是您的专属招呼管家，我熟记您的选择条件。开启我，我会帮助您向合适的帅哥打招呼，避免您错过他。若您对此功能不满意，可在“我的—设置--招呼管家和发信小助手”中随时取消。
+</string>
+    <string name="one_judge_no_vip">帅哥对不起，\n该功能暂时只针对会员开放哦
+    </string>
+    <string name="one_risk_rule">开启转盘大冒险，我们将不收取对方用户的语音通话费用；在游戏过程中，对方每转动轮盘一次，你可以得到44积分的奖励；如果对方在90s内未开始游戏，你可以选择挂断，但不会产生积分收入。正常游戏过程中，如果您发生秒退等违规行为，对方用户产生举报行为一经核实，我们将处罚本次游戏你所得积分外加2000积分，补偿对方用户以及损耗。</string>
+    <string name="one_auth_prompt_1">您可以享受如下权利：</string>
+    <string name="one_auth_prompt_2">1.您已成功加入新用户推荐池，更多帅哥将会看到你。</string>
+    <string name="one_auth_prompt_3">2.您可享受到小助手服务，小助手服务会避免您在不在线的情况下错过心仪的帅哥。</string>
+    <string name="one_auth_prompt_4">3.您可以享受到专属招呼管家帮您筛选符合您选择条件的用户并代替您向他打招呼。</string>
+    <string name="one_auth_prompt_5">4.您还可以通过认证“心动大神”获得更多帅哥青睐，并享受收取红包、礼物、提现等特权。</string>
+    <string name="one_identity_use">1.提高交友聊天的诚信和责任\n2.确保提现充值的安全\n3.快速处理咨询投诉</string>
+
+    <string name="one_back_top">您还没有可领现金哦，继续加油，\n记得每日登陆产品签到哦！</string>
+    <string name="one_back_nick">前半生,帅猛强,也难得,邮差客,翦陈杰@,四处风流,陪你洒脱,痛在夜里,归入庸俗,感慨颇多,烟灰谈清,夜里孤寂
+        ,女厕呻吟,弃薔毒眼,专打组。,配合出演,顾此失彼,一句谢谢,Brother,自编自导,Unkissme,你的背包,别装粗俗,涩UNLATE,南风旧人,执了她手,温热牛奶,治旧情难,将酒半杯饮,无眠小酌杯
+,衣着单薄,（初遇她）,枕袖清风！,我叫璪洝,浪子旧梦,成为心上人,孤途路长寥,尽揽少女心,质变成英雄,你经过我身旁,不经意的沉醉,-我把我灌醉丶</string>
+    <string name="one_back_top_content">已签到240天，领取80元现金。;
+已签到180天，领取60元现金。;
+已签到60天，领取20元现金。;
+已签到210天，领取70元现金。;
+已签到60天，领取20元现金。;
+已签到30天，领取10元现金。;
+已签到150天，领取50元现金。;
+已签到60天，领取20元现金。;
+已签到300天，领取100元现金。;
+已签到270天，领取90元现金。;
+已签到300天，领取100元现金。;
+已签到120天，领取40元现金。;
+已签到150天，领取50元现金。;
+已签到120天，领取40元现金。;
+已签到300天，领取100元现金。;
+已签到180天，领取60元现金。;
+已签到300天，领取100元现金。;
+已签到300天，领取100元现金。;
+已签到210天，领取70元现金。;
+已签到150天，领取50元现金。;
+已签到300天，领取100元现金。;
+已签到120天，领取40元现金。;
+已签到300天，领取100元现金。;
+已签到90天，领取30元现金。;
+已签到120天，领取40元现金。;
+已签到150天，领取50元现金。;
+已签到240天，领取80元现金。;
+已签到90天，领取30元现金。;
+已签到150天，领取50元现金。;
+已签到180天，领取60元现金。;
+已签到60天，领取20元现金。;
+已签到210天，领取70元现金。;
+已签到30天，领取10元现金。;
+已签到120天，领取40元现金。;
+已签到240天，领取80元现金。;
+已签到120天，领取40元现金。;
+已签到300天，领取100元现金。;
+已签到60天，领取20元现金。;
+已签到180天，领取60元现金。;
+已签到270天，领取90元现金。;
+已签到300天，领取100元现金。;
+已签到150天，领取50元现金。</string>
+    <string name="one_back_top_title">您还没有可领现金\n开通3个月以上会员，可参与此活动</string>
+    <string name="one_back_content_1">本活动意在奖励长期支持产品并活跃的会员用户。每用户最多可领取100元现金。</string>
+    <string name="one_back_content_2">
+        &#160;1.购买3个月会员及永久会员的用户可参加此活动。\n
+        2.可参与该活动用户，从成为会员之日起可以点击签到\n\u3000按钮进行签到。\n
+        3.用户每连续登录30日，可领取10元现金。最多可领取\n\u300010次。\n
+        4.领取现金的用户可通过“钱包”功能进行提现。每次申\n\u3000请提现额度不少于20元。\n
+        5.若用户在30日之内有未连续登录日，则重新记录。\n
+        6.签到满30日后，点击领取，则重新开始记录，最多记\n\u3000录10次。\n
+        7.30日内若全部签到，则可领取现金。点击领取后积分\n\u3000进入钱包。并弹窗提示。点击“查看钱包”，打开我的\n\u3000钱包页，发起提现。\n
+        8.本活动每ID只能参与一次。</string>
+    <string name="one_back_content_3">本活动最终解释权归官方所有，可咨询客服详细了解活动。</string>
+    <string name="one_auth">设置发信小助手及招呼管家，系统会过滤你信箱中的招呼信且不再提示，但信件扔存在于信箱中，为了避免你错过和男用户的联系，我们会将你设置的关心问题代你向满足你设置的招呼管家内的同条件异性发出，且当你不在线时，招呼管家会代你响应异性发来的招呼信。
+    </string>
+    <string name="one_emotion">1.认证成为情感咨询大神后，方可通过语音聊天收取100\n\u3000积分/分钟的奖励\n2.请认真填写技能说明和语音介绍，有助于获得更多需\n\u3000要该技能的人的选择
+    </string>
+    <string name="one_game">1.&#160;认证成为动心转盘大神后，方可加入动心推荐池，会\n\u3000获得更多的曝光率吸引更多用户关注你\n2.&#160;请认真填写技能说明语音介绍和照片展示，有助于获\n\u3000得更多需要该项技能的人的选择。
+    </string>
+    <string name="one_skill">1.确保技能质量和水平\n2.完成技能认证，方可获得活动奖励和提现资格
+    </string>
+    <string name="one_game_dialog">您还没有更新过冒险内容,\n快去设置您的个性冒险吧!
+    </string>
+
+    <string name="one_risk">\u3000\u3000本游戏本着公平公正公开的原则，你设置的冒险内容会展示给对方，游戏双方各四个冒险选项，你需要设置共八个默认选项出现在你的游戏中，若想修改，点击后方修改按钮，修改选项后，点击修改完成，完成修改。
+    </string>
+    <string name="one_emotion_intro_1">示例1:&#160;线上1V1连麦，我可以用心理学的方法帮你解决恋\n\u3000\u3000\u3000爱，情感方面的困扰哦~
+    </string>
+    <string name="one_game_intro_1">示例1:&#160;转盘大冒险，敢玩爽翻天，你来玩我陪你！
+    </string>
+    <string name="one_emotion_intro_2">示例2:&#160;我是雪儿，我愿意聆听你的故事，让你不再孤单。
+    </string>
+    <string name="one_game_intro_2">示例2:&#160;我是雪儿，我愿意陪你玩一些刺激的小游戏，让你不\n\u3000\u3000\u3000再孤单哟
+    </string>
+    <string name="one_draw_success">请确保手机开通、微信\n通过客服人员的验证
+    </string>
+    <string name="one_draw_instruction_1">1.提现金额 200 起提，每天最多可提现1次
+    </string>
+    <string name="one_draw_instruction_2">2.提现金额为200元的整数倍
+    </string>
+    <string name="one_draw_instruction_3">3.申请提现后，在“提现记录”里可以看到一条审核中的状态记录
+    </string>
+    <string name="one_draw_instruction_4">4.如果通过审核，完成提现，这条记录的状态变为“提现成功”，并且会收到一条提现成功的通知信
+    </string>
+    <string name="one_draw_instruction_5">5.如果未通过审核，这条记录的状态会变为“提现失败”，并且也会收到一条失败的通知信，你可以联系客服人员查明原因
+    </string>
+    <string name="one_draw_instruction_6">6.目前我们支持每周一次提现审核。 每周5下午18:00前，运营人员进行审核，符合提现要求的申请，将通过微信红包的方式完成提现
+    </string>
+    <string name="one_draw_instruction_7">7.积分兑换提现金额的比例：100积分=1元
+    </string>
+    <string name="one_gift_desc">送礼得芳心，回复率百分百，24小时不回，自动退还！
+    </string>
+    <string name="one_send_message">每日1:00点至9:00点可以使用2次群发\n9:00点次日凌晨1点可使用2次群发</string>
+
+    <string name="one_phone_auth_desc">尊敬的用户您好，根据相关部门规定，\n需要您认证手机号后才能继续使用。
+    </string>
+
+    <string name="one_auth_success_desc">您在使用中，有任何问题都可以联系我\n们的客服心心。祝您使用愉快！
+    </string>
+    <string name="one_identity_card">您需要首先完成身份证认证哦，同时\n也请您检查是否已完成手机号认证
+    </string>
+    <string name="one_identity_phone">您需要首先完成手机号认证，才能\n进行提现哟~
+    </string>
+    <string name="filter_vcode">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+
+    <!-- 评分 -->
+    <string name="load_error">加载出错</string>
+
+    <!--消息  start-->
+    Li
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="delete_dialogue_prompt">确定要删除当前会话消息吗?</string>
+    <string name="hint">提示</string>
+    <string name="chat_hint">聊天时请保持社交礼仪，谩骂、色情、骚扰等行为请及时举报。</string>
+    <!--消息  end-->
+    <string name="load_error_click">点击屏幕 , 重新加载</string>
+    <string name="server_error">服务异常</string>
+    <string name="server_error_500">服务异常,ERROR:500</string>
+    <string name="server_error_404">服务异常,ERROR:404</string>
+
+    <!--空间-->
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="voice1">[ 语音 ]</string>
+    <string name="pic1">[ 照片 ]</string>
+    <string name="video1">[ 视频 ]</string>
+    <string name="secret">[ 私照 ]</string>
+
+    <!--v1.1 新增-->
+
+
+    <!--v 1.1.3-->
+
+    <!--v 1.1.3-->
+    <string name="login_with_account_text">帐号登录</string>
+    <string name="login_with_sigin_text">免费注册</string>
+    <string name="simple_login_prompt">选择合作伙伴账号直接登录</string>
+    <string name="cancle">取消</string>
+    <string name="msg_list_like_text">%1$s对你心动(已等待你回复%2$s了)</string>
+
+    <!--美丽约会-->
+
+    <!--录音-->
+    <string name="notification_stopped">录音已终止</string>
+    <string name="notification_warning">存储空间不足(小于%d分钟)</string>
+    <!-- the name under which recordings will be visible in the media database is formatted like this -->
+    <string name="time_zero">00:00</string>
+    <string name="re_record">重录</string>
+    <string name="press_speak">按住说话</string>
+    <!--录音，临时-->
+    <string name="error_sdcard_access" msgid="8005660724361043509">"无法访问存储器"</string>
+    <string name="record_sign_hint">录制一段清晰有趣的语音，让更多的人来认识你吧！\n长按按钮录音哦~(至少3秒以上)</string>
+    <string name="voice_set">录制语音</string>
+
+    <!--钱包-->
+    <string name="load_inbox_submit">加载2天以前的私信</string>
+    <string name="vip_right">只有VIP才能使用此功能</string>
+
+    <string name="ignore_unread1">忽略未读</string>
+
+    <string name="small_interview">小编专访</string>
+    <string name="ask_interview">试着向她提问</string>
+
+    <string name="no">放弃</string>
+    <string name="yes">问她</string>
+    <string name="one_female_game_exit">请仔细阅读规则并点满全部\n8个(双方各4个)选项哟~</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--设置智能筛选页面的相关文案-->
+    <string name="hongbao_over">来晚了，超过24小时未领取\n红包已过期。</string>
+    <string name="hongbao_fail">手太慢，红包被抢光了</string>
+    <string name="hongbao_result">查看大家的手气</string>
+    <!--群发交互门槛弹窗-->
+    <string name="register_msg">欢迎你，新同学。我们致力于为你提供一个快速匹配交友的平台。还不赶快向心仪的人打个招呼，主动参与互动问答！心动不如行动哦！</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="send_all_message">每次群发最多可发两条消息、语音、图片、文字形式不限。我们将发送给最近活跃的20名会员用户。请合理利用当日群发次数。</string>
+    <string name="secret_chat_pop">这是一条小秘密\n想要来看看我私密照吗?</string>
+    <string name="secret_detail_pop">这是我的私房照片，\n想来了解不一样的我吗？\n（查看后可永久查看）</string>
+
+
+</resources>

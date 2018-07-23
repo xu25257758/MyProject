@@ -7,7 +7,7 @@ import java.io.StringWriter;
  * Created by xuzhiqiang on 2017/10/18.
  */
 
-public class StringUtil {
+public class StringUtils {
     public static boolean isEmpty(String text){
         if (text == null || text.length() == 0 || text.equalsIgnoreCase("null")){
             return true;

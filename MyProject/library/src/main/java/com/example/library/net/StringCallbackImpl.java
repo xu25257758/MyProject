@@ -4,7 +4,7 @@ import android.text.TextUtils;
 
 import com.alibaba.fastjson.JSON;
 import com.example.library.util.LogUtil;
-import com.example.library.util.StringUtil;
+import com.example.library.util.StringUtils;
 import com.example.library.util.Utils;
 
 import java.io.IOException;
@@ -35,7 +35,7 @@ public class StringCallbackImpl implements Callback {
     @Override
     public void onFailure(Call call, IOException e) {
         HttpClient.getInstance().removeCall(mCallback.getInvoker());
-        LogUtil.e(tag, StringUtil.convertThrowToString(e));
+        LogUtil.e(tag, StringUtils.convertThrowToString(e));
         tellTaskFailed(HttpUtil.ERROR_REQUEST_FAILURE, "请求失败");
     }
 
@@ -85,7 +85,7 @@ public class StringCallbackImpl implements Callback {
                     Object resultObj = JSON.parseObject(result, mCallback.getType());
                     mCallback.onSuccess(resultObj);
                 } catch (Exception e) {
-                    LogUtil.e(tag, StringUtil.convertThrowToString(e));
+                    LogUtil.e(tag, StringUtils.convertThrowToString(e));
                     tellTaskFailed(HttpUtil.ERROR_RESPONSE_HANDLE, "响应处理失败");
                 }
             }

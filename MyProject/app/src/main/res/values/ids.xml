@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- actionbarpulltorefresh start -->
+    <!-- actionbarpulltorefresh end  -->
+    <item type="id" name="home_tab1"/>
+    <item type="id" name="home_tab2"/>
+    <item type="id" name="home_tab3"/>
+    <item type="id" name="home_tab4"/>
+    <item type="id" name="home_tab5"/>
+
+    <item type="id" name="home_tab_ib1"/>
+    <item type="id" name="home_tab_ib2"/>
+    <item type="id" name="home_tab_ib3"/>
+    <item type="id" name="home_tab_ib4"/>
+    <item type="id" name="home_tab_ib5"/>
+
+    <item type="id" name="home_content"/>
+
+    <item name="np__increment" type="id"/>
+    <item name="np__decrement" type="id"/>
+
+    <!-- toast -->
+    <item name="yy_toast_id" type="id"/>
+    <!-- navigationbar -->
+    <item name="navi_left_btn" type="id"/>
+    <item name="navi_right_btn" type="id"/>
+    <item name="navi_right_icon" type="id"/>
+
+    <item name="textview" type="id"/>
+
+</resources>

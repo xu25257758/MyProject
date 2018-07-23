@@ -3,7 +3,7 @@ package com.example.library.net;
 
 import com.alibaba.fastjson.JSON;
 import com.example.library.util.LogUtil;
-import com.example.library.util.StringUtil;
+import com.example.library.util.StringUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -47,7 +47,7 @@ public class RequestParams {
     //添加请求属性
     public void addParam(String key, String value) {
         try {
-            if (!StringUtil.isEmpty(key) && !StringUtil.isEmpty(value)) {
+            if (!StringUtils.isEmpty(key) && !StringUtils.isEmpty(value)) {
                 params.put(key, URLEncoder.encode(value, "UTF-8"));
             }
         } catch (UnsupportedEncodingException e) {
@@ -59,13 +59,13 @@ public class RequestParams {
         if (uploadPaths == null) {
             uploadPaths = new HashMap<>();
         }
-        if (!StringUtil.isEmpty(key) && !StringUtil.isEmpty(filePath)) {
+        if (!StringUtils.isEmpty(key) && !StringUtils.isEmpty(filePath)) {
             uploadPaths.put(key, filePath);
         }
     }
 
     public String getUrl() {
-        if (StringUtil.isEmpty(mUrl)) {
+        if (StringUtils.isEmpty(mUrl)) {
             buildUrl();
         }
         return mUrl;
@@ -122,14 +122,14 @@ public class RequestParams {
             String jsonString = JSON.toJSONString(params);
             requestBody = RequestBody.create(mediaType, jsonString);
         } catch (Exception e) {
-            LogUtil.e(TAG, StringUtil.convertThrowToString(e));
+            LogUtil.e(TAG, StringUtils.convertThrowToString(e));
         }
         return requestBody;
     }
 
     public byte[] getParamData() {
         String param = buildParams();
-        if (StringUtil.isEmpty(param)) {
+        if (StringUtils.isEmpty(param)) {
             return null;
         } else {
             return param.getBytes();

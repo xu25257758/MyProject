@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emoticon_name">
+        <item>[emo_01]</item>
+        <item>[emo_02]</item>
+        <item>[emo_03]</item>
+        <item>[emo_04]</item>
+        <item>[emo_05]</item>
+        <item>[emo_06]</item>
+        <item>[emo_07]</item>
+        <item>[emo_08]</item>
+        <item>[emo_09]</item>
+        <item>[emo_10]</item>
+        <item>[emo_11]</item>
+        <item>[emo_12]</item>
+        <item>[emo_13]</item>
+        <item>[emo_14]</item>
+    </string-array>
+
+    <string-array name="new_purpose">
+        <item>聊天</item>
+        <item>打羽毛球</item>
+        <item>吃饭</item>
+        <item>看电影</item>
+        <item>谈恋爱</item>
+        <item>逛街</item>
+        <item>喝咖啡</item>
+        <item>跑步</item>
+        <item>散步</item>
+        <item>喝茶</item>
+        <item>泡吧</item>
+        <item>玩游戏</item>
+        <item>K歌</item>
+        <item>结婚</item>
+        <item>脱单</item>
+        <item>开始新恋情</item>
+        <item>聊天</item>
+        <item>谈恋爱</item>
+        <item>结婚</item>
+        <item>开始新恋情</item>
+        <item>脱单</item>
+        <item>打发无聊</item>
+    </string-array>
+
+    <string-array name="occupaiton">
+        <item>公务员</item>
+        <item>私营业主</item>
+        <item>公司职员</item>
+        <item>机关工作者</item>
+        <item>国企工作者</item>
+        <item>农业劳动者</item>
+        <item>在校学生</item>
+        <item>销售</item>
+        <item>医生</item>
+        <item>护士</item>
+        <item>教师</item>
+        <item>厨师</item>
+        <item>司机</item>
+        <item>军人</item>
+        <item>警察</item>
+        <item>保安</item>
+        <item>服务员</item>
+        <item>保洁</item>
+        <item>保姆/月嫂</item>
+        <item>自由职业者</item>
+        <item>工程师</item>
+        <item>互联网从业者</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="education">
+        <item>小学</item>
+        <item>初中</item>
+        <item>中专/高中</item>
+        <item>专科</item>
+        <item>本科</item>
+        <item>硕士研究生</item>
+        <item>博士研究生</item>
+    </string-array>
+
+    <string-array name="emotion">
+        <item>单身</item>
+        <item>已婚</item>
+        <item>未婚</item>
+        <item>离异</item>
+    </string-array>
+
+
+    <!--喜欢消息模板-->
+
+    <!--打招呼消息模板-->
+
+
+    <!--点赞消息模板-->
+
+    <!--打分消息模板-->
+
+
+    <!--<string-array name="vip_service_title">
+        <item>购买贝币</item>
+    </string-array>-->
+
+
+    <string-array name="noti_content_pair">
+        <item>不好奇你的Ta长什么样吗?快进来看看</item>
+        <item>某人给你点了赞,快来选择~</item>
+        <item>Ta是不是跟你表白啦,快戳开看看</item>
+        <item>叮咚~ ta来敲你的门,快开门</item>
+        <item>ta们都急着送上门了,来看配对结果~</item>
+        <item>耶~配对到你未来的ta啦,快点来！</item>
+    </string-array>
+</resources>

@@ -2,28 +2,58 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 
 def buildType = 0;
+//签名信息配置文件
+Properties keyProps = new Properties();
+keyProps.load(new FileInputStream(file(rootProject.file("keystores/keystore.properties"))))
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.example.myproject"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         buildType = 2
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+    }
+    signingConfigs {
+        key{
+            storeFile file(keyProps["storeFile"])
+            keyAlias keyProps["keyAlias"]
+            storePassword keyProps["storePassword"]
+            keyPassword keyProps["keyPassword"]
+        }
     }
     buildTypes {
 //        debug {
-//            buildConfigField "String" "DEBUG" "\"debug\""
+////            buildConfigField "String" "DEBUG" "\"debug\""
 //            minifyEnabled false
 //            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 //        }
         release {
-//            buildConfigField "String" "DEBUGS" "\"release\""
-            minifyEnabled false
+//            shrinkResources true
+//            minifyEnabled false
+//            debuggable false
+//            jniDebuggable false
+//            renderscriptDebuggable false
+//            zipAlignEnabled true
+            signingConfig signingConfigs.key
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+    productFlavors {
+        pro {
         }
     }
 }
@@ -32,14 +62,5 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
-
-    if (moduleType.toInteger() == 0){
-        compile project(':module1')
-        compile project(':module2')
-    }else if (moduleType.toInteger() == 1){
-        compile project(':module1')
-    }else if (moduleType.toInteger() == 2){
-        compile project(':module2')
-    }
     compile project(':library')
 }

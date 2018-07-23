@@ -29,7 +29,6 @@ public class MyApplication extends Application {
     }
 
     private void init() {
-        RequestParams.HOST = "http://192.168.1.190:8080/";
         instance = this;
         activities = new ArrayList<>();
     }

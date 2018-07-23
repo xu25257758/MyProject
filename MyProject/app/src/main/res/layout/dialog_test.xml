@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/one_reg_popwin_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/identity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:text="心动大神您好"
+            android:textColor="@color/color_242424"
+            android:textSize="@dimen/d_16" />
+
+        <TextView
+            android:id="@+id/identity_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_16"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/d_4"
+            android:text="您需要首先完成身份证认证哦，同时\n也请您检查是否已完成手机号认证。"
+            android:textColor="@color/color_242424"
+            android:textSize="@dimen/d_13" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/identity_cancel"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:background="@drawable/one_btn_gray_bg"
+                android:textSize="16dp"
+                android:textColor="#cdcdcd"
+                android:text="再等等" />
+
+            <Button
+                android:id="@+id/identity_sure"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:background="@drawable/one_btn_bg"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="@dimen/d_20"
+                android:text="去认证" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
